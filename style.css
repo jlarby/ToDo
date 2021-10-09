@@ -53,7 +53,7 @@ body {
 .neo-out {
   border-radius: 40px;
   background: #ecf0f3;
-  box-shadow: 13px 13px 20px #cbced1,
+  box-shadow: 13px 13px 10px #cbced1,
     -13px -13px 20px rgba(255, 255, 255, 0.267);
   border-radius: 20px;
 }
