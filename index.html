@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5030a93494.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+    <title>ToDo App</title>
+</head>
+<body>
+    <main>
+        <div class="container flex jc-c">
+            <div class="todo-wrap mt-5 neo-out">
+                <h1 class="heading">ToDo List App</h1>
+                <div class="fields mt-2">
+                    <div class="inptodo"><input id="add" type="text" class="user-input" onKeyDown="if(event.keyCode==13) add();" placeholder="Add your ToDo" /><a onclick="add() "><i class="fas fa-plus rotate45"></i></a></div>
+                    <p id="error" class="error">Please add a ToDo</p>
+                    <div class="todo-items-wrap">
+                        <h2 class="heading txt-sm mt-2">Uncomplete</h2>
+                        <ul id="toDoItems" class="todo-items">   
+                            <p class="noitems">No Items to Display.</p>
+                        </ul>
+                        <h2 class="heading txt-sm">Complete</h2>
+                        <ul id="toDoComplete" class="todo-items">
+                            <p class="noitems">No Items to Display.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

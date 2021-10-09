@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Raleway:wght@200;400;900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  width: 100%;
+  background-color: #e8edf0;
+  font-size: 1rem;
+  transition: all 1s ease;
+}
+/* Utilities */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.jc-c {
+  justify-content: center;
+}
+.txt-lg {
+  font-size: 4rem;
+}
+.txt-md {
+  font-size: 2rem;
+}
+.txt-sm {
+  font-size: 1rem;
+}
+.mt-5 {
+  margin-top: 4rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.p-1 {
+  padding: 0.7rem 1rem;
+}
+.heading {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #777777;
+}
+.neo-in {
+  background: #eef0f4;
+  box-shadow: inset 9.91px 9.91px 15px #d9dade,
+    inset -9.91px -9.91px 15px #ffffff;
+  border-radius: 20px;
+}
+.neo-out {
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+  border-radius: 20px;
+}
+.neo-p-heading {
+  padding: 1rem 10rem;
+}
+a {
+  color: #777777;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.complete {
+  color: rgb(82, 148, 7);
+}
+a:hover {
+  opacity: 0.8;
+}
+/* ToDo Card */
+.todo-wrap {
+  min-width: 600px;
+  min-height: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.fields {
+  width: 80%;
+}
+.fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 20px;
+  width: 90%;
+}
+.inptodo {
+  margin-bottom: 0.2rem;
+  border-radius: 50px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.error {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: rgb(226, 29, 29);
+  font-size: 0.9rem;
+  display: none;
+}
+.rotate45 {
+  transition: all 0.4s ease;
+  transform: scale(1.2);
+}
+.rotate45:hover {
+  transform: scale(1.4);
+}
+i {
+  background: linear-gradient(145deg, #ffffff, #c1c3c6);
+  border-radius: 100%;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  padding: 0.4rem;
+}
+.todo-items-wrap {
+  width: 100%;
+}
+.todo-items {
+  list-style: none;
+  padding: 0.5rem 0 1rem 0;
+}
+.todo-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+li > P {
+  overflow-wrap: break-word;
+  max-width: 320px;
+}
+.noitems {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
