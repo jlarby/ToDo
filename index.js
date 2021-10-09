@@ -44,8 +44,8 @@ let remove = (i) => {
 }
 let complete = (i) => {
     spliced = toDoArr.splice(i, 1);
+    completeArr.push(...spliced);
     addItem();
-
     addCompleteHtml += `
             <li class="todo-item neo-out p-1">
                 <p>${spliced}</p>
